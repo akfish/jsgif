@@ -349,3 +349,11 @@ if (typeof exports !== 'undefined') {
   exports.parseGIF = parseGIF;
 }
 // END_NON_BOOKMARKLET_CODE
+
+// Adapt for sea.js
+if (typeof define == 'function') {
+  define(function(require, exports, module) {
+    exports.Stream = Stream;
+    exports.parseGIF = parseGIF;
+  });
+}
