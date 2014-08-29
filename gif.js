@@ -354,6 +354,6 @@ if (typeof exports !== 'undefined') {
 if (typeof define == 'function') {
   define(function(require, exports, module) {
     exports.Stream = Stream;
-    exports.parseGIF = parseGIF;
+    exports.parse = parseGIF;
   });
 }
